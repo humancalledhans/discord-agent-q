@@ -1,1 +1,29 @@
 /.env
+
+# Node.js dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Environment variables (sensitive data)
+.env
+
+# Logs
+logs/
+*.log
+
+# Build output (if you add a build step later)
+dist/
+build/
+
+# OS-specific files
+.DS_Store  # Mac
+Thumbs.db  # Windows
+
+# Editor-specific files
+.vscode/
+.idea/
+
+# Miscellaneous
+*.bak
+*.tmp
