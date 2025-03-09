@@ -12,6 +12,7 @@ const client = new Client({
 const TOKEN = process.env.DISCORD_TOKEN;
 const BASE_URL = process.env.VUE_APP_BASE_URL_HANS ? process.env.VUE_APP_BASE_URL_HANS : "https://dion-avatar-backend.onrender.com"
 const API_ENDPOINT = BASE_URL + "/fetch_agent_q_output";
+let thinkingMessage;
 
 const allowedChannels = [
     '1347613630987767819',
@@ -43,7 +44,7 @@ client.on('messageCreate', async message => {
 
     try {
         // Send thinking message immediately
-        const thinkingMessage = await message.channel.send('Thinking... 🤔');
+        thinkingMessage = await message.channel.send('Thinking... 🤔');
 
         // Check if message contains "Q breakout strategy" (case-insensitive)
         const messageContent = message.content.toLowerCase();
