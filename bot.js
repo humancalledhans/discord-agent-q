@@ -15,6 +15,7 @@ const API_ENDPOINT = BASE_URL + "/fetch_agent_q_output";
 let thinkingMessage;
 
 const allowedChannels = [
+    '1363169659859370196',
     '1347613630987767819',
     '1347858445759545406'
 ];
